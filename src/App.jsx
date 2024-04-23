@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import CoffeeCard from "./components/CoffeeCard";
 import { useState } from "react";
+import Main from "./layout/Main";
 
 function App() {
   const loadedCoffees = useLoaderData();
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <section className="max-w-7xl mx-auto mt-24">
+        <Main />
         <h1 className="text-4xl text-blue-400">
           Numbers of Coffee: {loadedCoffees.length}
         </h1>
